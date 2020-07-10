@@ -1,0 +1,13 @@
+.difficulty {
+  margin: 1.5rem 3rem;
+  text-align: start;
+}
+
+.radio {
+  margin: 1rem 0;
+}
+
+label {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
