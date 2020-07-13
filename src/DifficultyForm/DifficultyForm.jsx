@@ -6,14 +6,15 @@ import { setDifficulty } from "../reducers/configSlice";
 export default function DifficultyForm() {
   const dispatch = useDispatch();
 
-  const setDifficulty = (event) => dispatch(setDifficulty(event.target.value));
+  const dispatchSetDifficulty = (event) =>
+    dispatch(setDifficulty(event.target.value));
 
   return (
     <div className="difficulty">
       <h2 className="difficulty__header">Choose a difficulty</h2>
       <div className="radio radio__super-easy">
         <input
-          onClick={setDifficulty}
+          onClick={dispatchSetDifficulty}
           name="difficulty"
           type="radio"
           id="super-easy"
@@ -25,7 +26,7 @@ export default function DifficultyForm() {
       </div>
       <div className="radio radio__easy">
         <input
-          onClick={setDifficulty}
+          onClick={dispatchSetDifficulty}
           name="difficulty"
           type="radio"
           id="easy"
@@ -37,7 +38,7 @@ export default function DifficultyForm() {
       </div>
       <div className="radio radio__medium">
         <input
-          onClick={setDifficulty}
+          onClick={dispatchSetDifficulty}
           name="difficulty"
           type="radio"
           id="medium"
@@ -49,7 +50,7 @@ export default function DifficultyForm() {
       </div>
       <div className="radio radio__hard">
         <input
-          onClick={setDifficulty}
+          onClick={dispatchSetDifficulty}
           name="difficulty"
           type="radio"
           id="hard"

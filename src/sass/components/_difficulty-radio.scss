@@ -1,12 +1,9 @@
 .difficulty {
-  margin: 2rem 4rem;
+  @include card;
+
   text-align: center;
   width: 35rem;
-  background-color: $color-warm-tertiary;
-  border-radius: 4px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
+
   grid-area: choose;
   justify-self: center;
   align-self: start;

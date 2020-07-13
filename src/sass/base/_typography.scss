@@ -1,11 +1,6 @@
 .difficulty {
   &__header {
-    padding-top: 1.5rem;
-    font-size: 3rem;
-    display: inline-block;
-    position: relative;
-
-    @include heading-underline;
+    @include standard-header;
   }
 
   &__label {
@@ -20,4 +15,25 @@
   z-index: 2;
 
   @include heading-underline;
+}
+
+.settings__header {
+  @include standard-header;
+}
+
+.list-item {
+  list-style: none;
+  text-align: start;
+  padding-left: 5rem;
+  &__header {
+    @include standard-header;
+    font-size: 2rem;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }

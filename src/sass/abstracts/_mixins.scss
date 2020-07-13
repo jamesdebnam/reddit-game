@@ -11,3 +11,22 @@
     z-index: -1;
   }
 }
+
+@mixin card {
+  margin: 2rem 4rem;
+
+  background-color: $color-warm-tertiary;
+  border-radius: 4px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+@mixin standard-header {
+  padding-top: 1.5rem;
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+
+  @include heading-underline;
+}
