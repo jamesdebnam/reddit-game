@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./DifficultyForm.css";
-
 export default function DifficultyForm() {
   return (
     <div className="difficulty">

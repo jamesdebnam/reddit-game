@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import "../sass/main.scss";
 import DifficultyForm from "../DifficultyForm/DifficultyForm";
 
 export default function App() {
