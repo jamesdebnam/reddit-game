@@ -5,5 +5,7 @@
   text-align: center;
   &__header {
     padding-top: 2rem;
+    grid-area: title;
+    place-self: center;
   }
 }

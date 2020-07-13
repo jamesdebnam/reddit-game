@@ -1,0 +1,8 @@
+.game {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10rem auto;
+  grid-template-areas:
+    "title title"
+    "choose explain";
+}

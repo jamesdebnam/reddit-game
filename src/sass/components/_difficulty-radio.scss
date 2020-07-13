@@ -7,6 +7,9 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
+  grid-area: choose;
+  justify-self: center;
+  align-self: start;
 
   .radio {
     margin: 2rem 0;

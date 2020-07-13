@@ -1,8 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+
+import { setDifficulty } from "../reducers/configSlice";
 
 export default function DifficultyForm() {
-  const setDifficulty = (event: React.MouseEvent<HTMLInputElement>): void =>
-    console.log((event.target as HTMLInputElement).value);
+  const dispatch = useDispatch();
+
+  const setDifficulty = (event) => dispatch(setDifficulty(event.target.value));
 
   return (
     <div className="difficulty">
