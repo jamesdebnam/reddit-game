@@ -1,0 +1,13 @@
+@mixin heading-underline {
+  &::after {
+    content: "";
+    width: 105%;
+    height: 30%;
+    background-color: $color-secondary;
+    position: absolute;
+    left: -2.5%;
+    bottom: 0;
+    transform: skewY(-0.4deg);
+    z-index: -1;
+  }
+}

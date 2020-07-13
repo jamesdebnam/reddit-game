@@ -1,7 +1,9 @@
 .game {
   background-color: $color-warm-primary;
+  box-sizing: border-box;
+  height: calc(100vh - 4rem);
   text-align: center;
   &__header {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }

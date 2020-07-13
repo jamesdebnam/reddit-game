@@ -1,16 +1,18 @@
 .difficulty {
-  margin: 1.5rem 3rem;
+  margin: 2rem 4rem;
   text-align: center;
-  width: 20rem;
+  width: 35rem;
   background-color: $color-warm-tertiary;
   border-radius: 4px;
-  box-shadow: 0 2rem 2rem (0, 0, 0, 0.4);
-  .radio {
-    margin: 1rem 0;
-  }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 
-  label {
-    font-size: 1.5rem;
+  .radio {
+    margin: 2rem 0;
+    &:last-child {
+      padding-bottom: 2rem;
+    }
   }
 
   input[type="radio"] {
@@ -19,15 +21,17 @@
 
     + label {
       display: inline-block;
-      width: 10rem;
+      width: 14rem;
       padding: 0.5rem;
       transition: all 0.2s ease;
-      border-radius: 10px;
+      border-radius: 5px;
       border: 4px rgba(0, 0, 0, 0) dashed;
     }
 
     &:checked + label {
       background-color: $color-primary;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
     }
 
     &:hover + label {

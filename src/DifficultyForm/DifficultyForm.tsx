@@ -11,19 +11,27 @@ export default function DifficultyForm() {
           id="super-easy"
           value="super-easy"
         />
-        <label htmlFor="super-easy">Super Easy</label>
+        <label className="difficulty__label" htmlFor="super-easy">
+          Super Easy
+        </label>
       </div>
       <div className="radio radio__easy">
         <input name="difficulty" type="radio" id="easy" value="easy" />
-        <label htmlFor="easy">Easy</label>
+        <label className="difficulty__label" htmlFor="easy">
+          Easy
+        </label>
       </div>
       <div className="radio radio__medium">
         <input name="difficulty" type="radio" id="medium" value="medium" />
-        <label htmlFor="medium">Medium</label>
+        <label className="difficulty__label" htmlFor="medium">
+          Medium
+        </label>
       </div>
       <div className="radio radio__hard">
         <input name="difficulty" type="radio" id="hard" value="hard" />
-        <label htmlFor="hard">Hard</label>
+        <label className="difficulty__label" htmlFor="hard">
+          Hard
+        </label>
       </div>
     </div>
   );

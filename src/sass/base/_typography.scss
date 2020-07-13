@@ -1,0 +1,23 @@
+.difficulty {
+  &__header {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+
+    @include heading-underline;
+  }
+
+  &__label {
+    font-size: 2rem;
+  }
+}
+
+.game__header {
+  font-size: 5rem;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+
+  @include heading-underline;
+}
