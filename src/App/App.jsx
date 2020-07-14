@@ -13,7 +13,7 @@ export default function App() {
       <div className="game__left">
         <DifficultyForm />
 
-        <Button ButtonClass="btn-big" content="Let's play!" />
+        <Button buttonClass="btn-big" content="Let's play!" />
       </div>
       <div className="game__right">
         <GameDescription />

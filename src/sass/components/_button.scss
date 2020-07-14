@@ -1,4 +1,27 @@
 .btn {
   background-color: $color-warm-tertiary;
   border: 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all ease 0.2s;
+
+  &-big {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 3rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    transform: translateY(-4px);
+    box-shadow: 0 0.8rem 1.3rem rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.25);
+  }
 }
