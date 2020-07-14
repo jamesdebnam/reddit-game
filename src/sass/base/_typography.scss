@@ -17,8 +17,14 @@
   @include heading-underline;
 }
 
-.settings__header {
+.settings__header,
+.game-description__header {
   @include standard-header;
+}
+
+.game-description__content {
+  font-size: 2rem;
+  padding: 2rem 5rem;
 }
 
 .list-item {

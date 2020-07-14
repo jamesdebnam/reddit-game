@@ -19,6 +19,7 @@ export default function DifficultyForm() {
           type="radio"
           id="super-easy"
           value="super-easy"
+          defaultChecked
         />
         <label className="difficulty__label" htmlFor="super-easy">
           Super Easy
