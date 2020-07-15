@@ -20,16 +20,23 @@ export const fetchSubreddits = createAsyncThunk(
     const subReddits = await axios.get(
       "https://oauth.reddit.com/subreddits/popular.json",
       {
+        params: {
+          after: "t5_3lhmz",
+          limit: 100,
+          show: "all",
+        },
         headers: {
           "User-Agent": "website:reddit-guesser:v0.1",
           Authorization: `Bearer ${response.data.access_token}`,
-          limit: 100,
-          show: "all",
         },
       }
     );
     console.log(subReddits.data.data.children);
-    return subReddits.data.data.children;
+
+    const subreddits = subReddits.data.data.children.map((item) => {
+      return { url: item.data.url, name: item.data.title };
+    });
+    console.log(subreddits);
   }
 );
 
@@ -38,9 +45,7 @@ const gameSlice = createSlice({
   initialState: "",
   reducers: {},
   extraReducers: {
-    [fetchSubreddits.fulfilled]: (state, action) => {
-      state = action.payload;
-    },
+    [fetchSubreddits.fulfilled]: (state, action) => {},
   },
 });
 
