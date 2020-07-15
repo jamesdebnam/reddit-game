@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reddit-game/static/css/main.5d3e85b0.chunk.css",
+    "main.js": "/reddit-game/static/js/main.10a43dfc.chunk.js",
+    "main.js.map": "/reddit-game/static/js/main.10a43dfc.chunk.js.map",
+    "runtime-main.js": "/reddit-game/static/js/runtime-main.ac30a484.js",
+    "runtime-main.js.map": "/reddit-game/static/js/runtime-main.ac30a484.js.map",
+    "static/js/2.e666dd2b.chunk.js": "/reddit-game/static/js/2.e666dd2b.chunk.js",
+    "static/js/2.e666dd2b.chunk.js.map": "/reddit-game/static/js/2.e666dd2b.chunk.js.map",
+    "index.html": "/reddit-game/index.html",
+    "precache-manifest.4a91c75f45464786abd7d1b6eac4eaca.js": "/reddit-game/precache-manifest.4a91c75f45464786abd7d1b6eac4eaca.js",
+    "service-worker.js": "/reddit-game/service-worker.js",
+    "static/css/main.5d3e85b0.chunk.css.map": "/reddit-game/static/css/main.5d3e85b0.chunk.css.map",
+    "static/js/2.e666dd2b.chunk.js.LICENSE.txt": "/reddit-game/static/js/2.e666dd2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac30a484.js",
+    "static/js/2.e666dd2b.chunk.js",
+    "static/css/main.5d3e85b0.chunk.css",
+    "static/js/main.10a43dfc.chunk.js"
+  ]
+}
