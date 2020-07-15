@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 
 import { useDispatch } from "react-redux";
 
-import { fetchSubreddits } from "../reducers/gameSlice";
+import { fetchPosts } from "../reducers/gameSlice";
 
 export default function Game() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchSubreddits());
+    dispatch(fetchPosts(50));
   }, []);
   return <div>hello</div>;
 }
